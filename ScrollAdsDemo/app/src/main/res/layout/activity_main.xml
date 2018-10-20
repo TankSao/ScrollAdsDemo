@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@drawable/background_top"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:gravity="center_vertical"
+            android:text="轮播demo"
+            android:textColor="#ffffff"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <com.example.administrator.scrolladsdemo.ScrollTextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingBottom="7dp"
+        android:paddingTop="7dp"
+        android:scrollHorizontally="true"
+        android:text="1111111154545158481515151584789151515466565656964646111111115454515848151515158478915151546656565696464611111111545451584815151515847891515154665656569646461111111154545158481515151584789151515466565656964646111111115454515848151515158478915151546656565696464611111111545451584815151515847891515154665656569646461111111154545158481515151584789151515466565656964646111111115454515848151515158478915151546656565696464611111111545451584815151515847891515154665656569646461111111154545158481515151584789151515466565656964646"
+        android:singleLine="true"
+        android:textColor="#ee4d07"
+        android:textSize="18sp" />
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/background_bottom"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:scrollbars="none" />
+</LinearLayout>
